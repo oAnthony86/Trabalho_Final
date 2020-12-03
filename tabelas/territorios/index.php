@@ -1,0 +1,1 @@
+Já falei q eu discordp?
