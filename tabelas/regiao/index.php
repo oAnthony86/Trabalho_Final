@@ -4,10 +4,12 @@
     require_once 'listagem.php';
     //Cab_tabela();
 
-    if (!($_GET['alterar'])){
+    if (!($_GET['alterar']) and !($_GET['deletar'])){
         require_once 'cadastrar.php';
     }else if($_GET['alterar']){
         require_once 'alterar.php';
+    }else if($_GET['deletar']){
+        require_once 'deletar.php';
     }
     tabela(listar($conexao));
 ?>

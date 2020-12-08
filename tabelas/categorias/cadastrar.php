@@ -34,7 +34,7 @@
             </div>
             <div class="form-group">
                 <label for="IDRegiao">Descrição da Categoria:</label>
-                <input type="number" class="form-control" name="Descricao" id="Descricao" placeholder="Descrição da Categoria" />
+                <input type="text" class="form-control" name="Descricao" id="Descricao" placeholder="Descrição da Categoria" />
             </div>
             <input class="btn btn-success" type="submit" name="cadastrar" value="Cadastrar"/>
         </form>

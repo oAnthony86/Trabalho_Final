@@ -1,8 +1,8 @@
 <?php
     function listar($conexao){
         try{
-            $sql = 'SELECT IDTerritorio, DescricaoTerritorio, IDRegiao 
-                      FROM territorios';
+            $sql = 'SELECT IDTransportadora, NomeConpanhia, Telefone 
+                      FROM transportadoras';
             $stmt = $conexao->prepare($sql);
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_NUM);          
@@ -17,8 +17,8 @@
                 <thead>
                     <tr>
                         <th scope="col">Código</th>
-                        <th scope="col">Descrição</th>
-                        <th scope="col">Código Região</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Telefone</th>
                         <th scope="col">Opções</th>
                     </tr>
                 </thead>
@@ -29,9 +29,9 @@
                             foreach($linha as $coluna){
                                 echo '<td>'.$coluna.'</td>';
                             }
-                    echo '<td><a href="index.php?page=territorios&alterar='.$linha[0].'">Alterar</a>';
+                    echo '<td><a href="index.php?page=transportadoras&alterar='.$linha[0].'">Alterar</a>';
                     echo ' | ';
-                    echo '<a href="index.php?page=territorios&deletar='.$linha[0].'">Deletar</a></td>';
+                    echo '<a href="index.php?page=transportadoras&deletar='.$linha[0].'">Deletar</a></td>';
                     echo '</tr>';
                 }
             }

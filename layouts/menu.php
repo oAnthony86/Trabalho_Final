@@ -1,7 +1,7 @@
 <?php
 $sql = [
     ['regiao', 'Região'],
-    ['territorios', 'Territórios'],
+    ['transportadoras', 'Transportadoras'],
     ['categorias', 'Categorias']
 ];
 
