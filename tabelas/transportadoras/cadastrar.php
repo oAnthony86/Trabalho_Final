@@ -34,7 +34,7 @@
             </div>
             <div class="form-group">
                 <label for="IDRegiao">Telefone:</label>
-                <input type="number" class="form-control" name="Telefone" id="Telefone" placeholder="Telefone da Transportadora" />
+                <input type="tel" class="form-control" name="Telefone" id="Telefone" placeholder="Telefone da Transportadora" />
             </div>
             <input class="btn btn-success" type="submit" name="cadastrar" value="Cadastrar"/>
         </form>

@@ -41,7 +41,7 @@
             </div>
             <div class="form-group">
                 <label for="desc">Telefone da Companhia:</label>
-                <input type="text" class="form-control" name="Telefone" id="Telefone" placeholder="Telefone da Companhia" value="<?=$result[0]['Telefone']?>"/>
+                <input type="tel" class="form-control" name="Telefone" id="Telefone" placeholder="Telefone da Companhia" value="<?=$result[0]['Telefone']?>"/>
             </div>
             <input class="btn btn-success" type="submit" name="alterar" value="Alterar"/>
         </form>
