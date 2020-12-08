@@ -7,7 +7,7 @@
             $stmt->bindParam(':nomecategoria', $_POST['NomeCategoria']);
             $stmt->bindParam(':descricao', $_POST['Descricao']);
             $stmt->execute();
-            header('Location: index.php?page=territorio');
+            header('Location: index.php?page=categorias');
         } catch (PDOException $e) {
             echo "<h2 class='danger'> Falha ao tentar cadastrar a categoria! Verifique as informações e tente novamente. </h2>";
         }

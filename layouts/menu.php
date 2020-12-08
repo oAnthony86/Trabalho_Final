@@ -24,4 +24,5 @@ $sql = [
         ?>
         </ul>
     </div>
+    <a class="nav-link float-right" href="index.php?page=logoff" style="color: white;">Desconectar</a>
 </nav>
