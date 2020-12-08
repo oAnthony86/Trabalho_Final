@@ -3,8 +3,8 @@
 
     require_once LAYOUTS."menu.php";
 
-    if (!isset($_GET['pagina'])){
+    if (!isset($_GET['page'])){
         require_once 'home.php';
     }else{
-        require_once 'tabelas/'.$_GET['pagina'].'/index.php';
+        require_once 'tabelas/'.$_GET['page'].'/index.php';
     }

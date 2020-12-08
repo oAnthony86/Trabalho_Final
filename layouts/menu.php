@@ -17,7 +17,7 @@ $sql = [
         <?php
         foreach ($sql as $linha){
             echo '<li class="nav-item">
-                    <a class="text-light nav-link"  href="index.php?pagina='.$linha[0].'">'.$linha[1].'</a>
+                    <a class="text-light nav-link"  href="index.php?page='.$linha[0].'">'.$linha[1].'</a>
                 </li>';
         }
 
